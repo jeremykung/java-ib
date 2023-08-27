@@ -46,6 +46,7 @@ public class Main {
 
         int[] straightNums = {1, 2, 3, 4, 5};
         reverseArray(straightNums);
+        getArraySum(straightNums);
 
     }
 
@@ -61,6 +62,19 @@ public class Main {
 
         System.out.println("Reversed array:" + Arrays.toString(reversedArray));
         return reversedArray;
+    }
+
+    static int getArraySum(int[] array) {
+        System.out.println("Adding elements of array:");
+        System.out.println(Arrays.toString(array));
+
+        int totalSum = 0;
+        for (int i = 0; i < array.length; i++) {
+            totalSum += array[i];
+        }
+
+        System.out.println("total sum: " + totalSum);
+        return totalSum;
     }
 
     static int getHighestNumber(int[] array) {
